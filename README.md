@@ -60,6 +60,7 @@ _(Note: Make sure to download XAMPP, Visual Studio Code, and Postman as these wi
         CONSTRAINT fk_ref_referred FOREIGN KEY (referred_user_id) REFERENCES users(id)
       ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 - Seed Data (adjust user IDs to your data):
+
   Ensure some users have no profile or no roles so LEFT/RIGHT/FULL joins produce meaningful NULLs.
 
       INSERT INTO roles (role_name) VALUES ('student'), ('instructor'), ('admin')
