@@ -147,7 +147,7 @@ Open phpMyAdmin and run the required JOIN queries on the database.
         ) ORDER BY u.id;
 
 # **Step 4: Testing with Postman**  
-Perform /api/reports/... endpoint, set Authorization → Bearer Token = {{token}}. _Note: You must first log in to obtain a valid JWT token before accessing this endpoint_
+Perform /api/reports/... endpoint, set Authorization → Bearer Token = {{token}}. _Note: You must first log in to obtain a valid JWT token before accessing these endpoints_
 - GET /api/reports/users-with-roles → Shows users with their assigned roles (Inner Join).
 - GET /api/reports/users-with-profiles → Lists users with profile details if available (Left Join).
 - GET /api/reports/roles-right-join → Displays all roles and their associated users (Right Join).
