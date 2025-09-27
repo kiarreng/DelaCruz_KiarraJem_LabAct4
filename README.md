@@ -59,7 +59,7 @@ _(Note: Make sure to download XAMPP, Visual Studio Code, and Postman as these wi
         CONSTRAINT fk_ref_referrer FOREIGN KEY (referrer_user_id) REFERENCES users(id),
         CONSTRAINT fk_ref_referred FOREIGN KEY (referred_user_id) REFERENCES users(id)
       ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-- Seed Data
+- Seed Data (adjust user IDs to your data):
 
       INSERT INTO roles (role_name) VALUES ('student'), ('instructor'), ('admin')
       ON DUPLICATE KEY UPDATE role_name = VALUES(role_name);
